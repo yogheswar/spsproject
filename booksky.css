@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+}
+#header{
+    background-color:#FD6569;
+    color:black;
+    padding:10px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+}
+#container{
+   padding: 10px;
+   margin-left: 20px;
+   margin-top: 50px;
+   border-radius: 10px;
+}
+#bookcontainer{
+  padding :15px;
+  width:279px;
+  background-color: black;
+  color: white;
+  display:inline-block;
+  vertical-align: top;
+  margin-right:10px;
+  border-radius: 10px;
+  transform: scale(1)
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.3s ease-in-out,
+              opacity 0.4s ease,
+              margin 0.3s ease;
+  opacity: 1;
+ /* Add space below each container */
+}
+
+
+#bookcontainer:hover {
+   transform: scale(1.03) translateY(5px);
+}
+h2{
+  font-family: Poppins;
+}
+#bookcontainer h2{
+  color:#FD6569;
+}
+#btn{ 
+    background-color: #FD6569;
+    border-radius: 10px;
+    color:black;
+    padding-top:3px;
+    padding-right:5px;
+    padding-left:5px;
+    padding-bottom:3px;
+    margin-top:10px;
+    border:none;
+    cursor: pointer;
+}
+#btn:hover{
+    color: #FD6569;
+    background-color:white;
+}
+#add{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    width : 70px;
+    height: 70px;
+    background-color: #FD6569;
+    border-radius: 50%;
+    font-size: xx-large;
+    border:none;  
+    display: inline;
+    transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ /* Add space below each container */
+}
+#add:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#popupoverlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity: 0.8;
+    background-color:black;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#popup{
+  width: 30%;
+  z-index:2;
+  padding:40px;;
+  top: 25%;
+  left: 35%;
+  position: absolute;
+  background-color:#FD6569;
+  border-radius: 10px;
+  display:none;
+}
+#popup input{
+  border:none;
+  border-bottom:solid black;
+  background:transparent;
+  width:100%;
+  padding:5px;
+  margin: 5px;
+  font-size: 20px;
+  display:none;
+}
+#popup textarea{
+  border-bottom:solid black;
+  border: solid black;;
+  background:transparent;
+  width:100%;
+  padding:5px;
+  margin: 5px;
+  font-size: 20px;
+  display:none;
+}
+#addbook{
+  padding: 5px;
+  top: 10px;
+  border-radius: 5px;
+  background-color:black;
+  padding: 5px;
+  color:white;
+  margin-top:10px;
+
+}
+#deleting{
+  background-color:black;
+  color:white;
+  padding: 5px;
+  top: 10px;
+  border-radius: 5px;
+  margin-left: 10px;;
+  margin-top:10px;
+
+}
+#popup input:focus, #popup textarea:focus{
+  outline: none;
+}

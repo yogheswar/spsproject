@@ -1,0 +1,122 @@
+:root {
+    --primary: #ffcc00;
+    --dark: #222;
+    --light: #fff9db;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #333;
+  }
+  
+  .hero {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), #f9e79f);
+    padding: 100px 20px;
+    color: #333;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    padding: 60px 20px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+  }
+  
+  section#services ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  section#services li {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  form button {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+  
+  form button:hover {
+    transform: scale(1.05);
+  }
+  
+  .success-msg {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 20px;
+  }
+  
